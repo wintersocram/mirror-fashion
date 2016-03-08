@@ -126,3 +126,50 @@ footer .container {
   float: left;
   margin-left: 25px;
 }
+#section-diferential li:nth-child(2n) {
+	background-color: #b0b7bc;
+}
+#section-diferential li:nth-child(2n+1) {
+	/*background-color: #fff196;*/
+}
+
+a:hover { 
+	background-color: #000;
+	color: #FFF;
+	font-weight: bold;
+	font-style: italic;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+p:first-letter {
+	font-weight: bold;
+}
+p:first-line {
+	font-variant: small-caps;
+}
+h1 + p {
+	text-indent: 0;
+}
+
+/*
+a:visited { 
+  color: red;
+}
+a:active { 
+  color: green;
+}
+p:first-line {
+  color: blue;
+}
+a:before {
+  content: '[ ';
+}
+a:after {
+  content: ' ]';
+}
+a[href^=http]:before {}
+a[href^=http]:after {
+  content: ' (externo)';
+}
+*/
