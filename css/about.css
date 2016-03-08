@@ -1,19 +1,21 @@
 body {
 	color:#333;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.container {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 900px;
+	margin: 0 auto;
+	max-width: 940px;
 	width: 100%;
+}
 
-}
-h1 {
-	background-image: url(../img/sobre-background.jpg);
-	padding: 10px;
-}
 h2 {
 	border-bottom: 2px solid #333;
 	margin-top: 30px;
+}
+header {
+	position: relative;
 }
 p {
 	font-family: "Arial", "Helvetica", sans-serif;
@@ -39,6 +41,32 @@ figure figcaption {
 	text-align: center;
 }
 
+
+.container {
+	margin: 0 auto;
+	max-width: 940px;
+	width: 100%;
+}
+.title {
+	background-image: url(../img/sobre-background.jpg);
+	padding: 10px;
+}
+.menu-options ul {
+	bottom: 0;
+	font-size: 15px;
+	position: absolute;
+	right: 0;
+}
+.menu-options a {
+	color: #003366;
+}
+.menu-options ul li {
+	display: inline;
+	margin-left: 20px;
+}
+
+
+
 #centro-distribuicao {
 	margin-left: auto;
 	margin-right: auto;
@@ -53,16 +81,48 @@ figure figcaption {
 	margin-top: 0px;
 	width: 100%;
 }
-#footer {
-	color: #777;
-	margin: 30px 0;
-	padding: 30px 0;
-	vertical-align: bottom;
-	max-width:900px;
-	width: 100%;
+
+
+
+footer {
+	background-image: url(../img/fundo-rodape.png);
+	clear: both;
+	padding: 20px 0;
 }
-#footer img {
-	margin-right: 30px;
-	vertical-align: middle;
-	width: 94px;
+footer .container {
+  position: relative;
+}
+.social {
+  position: absolute;
+  max-height: 32px;
+  top: 25%;
+  /*
+  top: 12px;
+  */
+  right: 0;
+}
+.social a {
+  /* tamanho da imagem */
+  height: 32px;
+  width: 32px;
+
+  /* image replacement */
+  display: block;
+  text-indent: -9999px;  
+}
+
+.social a[href*="facebook.com"] {
+	background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter.com"] {
+	background-image: url(../img/twitter.png);
+}
+
+.social a[href*="plus.google.com"] {
+	background-image: url(../img/googleplus.png);
+}
+.social li {
+  float: left;
+  margin-left: 25px;
 }
