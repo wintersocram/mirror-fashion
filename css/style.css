@@ -7,14 +7,22 @@ header {
 	position: relative;
 }
 
+.container {
+	margin: 0 auto;
+	max-width: 940px;
+	width: 100%;
+}
 .sac {
+	position: absolute;
+
 	background: url(../img/sacola.png) no-repeat top right;
 	font-size: 14px;
+	text-align: right;
+	
 	padding-right: 35px;
 	padding-top: 20px;
-	position: absolute;
+
 	right: 0;
-	text-align: right;
 	top: 0;
 	width: 140px;
 }
@@ -53,12 +61,7 @@ header {
 	margin-left: 20px;
 }
 
-.container {
-	margin: 0 auto;
-	max-width: 940px;
-	width: 100%;
-}
-.destac {
+.destaq {
 	margin-top: 7px;
 }
 
@@ -173,8 +176,19 @@ header {
 	margin-right: auto;*/
 	padding-bottom: 10px;
 	/*text-align: center;*/
+	transition: 0.7s;
 	vertical-align: top;
 	width: 140px;
+}
+@media screen and (min-width: 939px) {
+	.painel li:nth-child(2n):hover {
+		transform: scale(1.2) rotate(-5deg);;
+		transition: 0.7s;
+	}
+	.painel li:nth-child(2n+1):hover {
+		transform: scale(1.2) rotate(5deg);;
+		transition: 0.7s;
+	}
 }
 .painel a {
 	color: #333;
@@ -239,6 +253,6 @@ footer .container {
 	background-image: url(../img/googleplus.png);
 }
 .social li {
-  float: left;
-  margin-left: 25px;
+	float: left;
+	margin-left: 25px;
 }

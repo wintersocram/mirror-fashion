@@ -1,0 +1,80 @@
+@media screen and (min-width: 400px) and (max-width: 449px) {
+	body {
+		font-size: 13px;
+	}
+	.container {
+		margin: 0 auto;
+		width: 96%;
+	}
+	header {
+		position: static;
+	}
+	header h1 {
+		text-align: center;
+	}
+
+	header h1 img,
+	footer div img {
+		max-width: 50%;
+	}
+	.sac {
+		display: none;
+	}
+	.menu-options {
+		position: static;
+		text-align: center;
+		width: 400px;
+	}
+	.menu-options ul {
+		position: static;
+	}
+	.menu-options ul li {
+		display: inline-block;
+		margin: 5px;
+	}
+	.search,
+	.menu-departments,
+	.destaq img {
+		width: 100%;
+		max-width: 100%;
+	}
+	.search input[type=search] {
+		width: 90%;
+	}
+	.painel {
+		width: 96%;
+	}
+	.painel li {
+		width: 45%;
+	}
+}
+
+
+
+
+@media screen and (min-width: 550px) and (max-width: 630px) {
+	body {
+		font-size: 13px;
+	}
+	.painel {
+		width: 40%;
+	}
+	.painel li {
+		width: 45%;
+	}
+}
+@media screen and (min-width: 631px) {
+	body {
+		font-size: 14px;
+	}
+	.painel {
+		width: 45%;
+	}
+	.painel li {
+		width: 30%;
+	}
+}
+
+.painel img {
+	width: 100%;
+}
