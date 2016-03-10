@@ -134,6 +134,7 @@ footer .container {
 }
 
 a:hover { 
+	transition: background-color 2s;
 	background-color: #000;
 	color: #FFF;
 	font-weight: bold;
@@ -145,13 +146,12 @@ a:hover {
 p:first-letter {
 	font-weight: bold;
 }
-p:first-line {
+:not(p) + p:first-line {
 	font-variant: small-caps;
 }
 h1 + p {
 	text-indent: 0;
 }
-
 /*
 a:visited { 
   color: red;
@@ -172,4 +172,112 @@ a[href^=http]:before {}
 a[href^=http]:after {
   content: ' (externo)';
 }
+.a{
+  /*todas as bordas arredondadas com um raio de 15px
+
+  border-radius: 15px;
+}
+.b{
+  /*borda superior esquerda e inferior direita com 5px
+  borda superior direita e inferior esquerda com 20px
+
+  border-radius: 5px 20px;
+}
+.c{
+  /*borda superior esquerda com 5px
+  borda superior direita e inferior esquerda com 20px
+  borda inferior direita com 50px
+
+  border-radius: 5px 20px 50px;
+}
+.d{
+  /*borda superior esquerda com 5px
+  borda superior direita com 20px
+  borda inferior direita com 50px 
+  bordar inferior esquerda com 100px
+
+  border-radius: 5px 20px 50px 100px;
+}
+p {
+  text-shadow: 10px 10px red;
+}
+p {
+	/*grau de espalhamento (blur)
+	text-shadow: 10px 10px 5px red;
+	/*mais de uma sombra ao mesmo tempo
+	text-shadow: 10px 10px 5px red, -5px -5px 4px red;
+
+	/*podemos colocar sombras em qualquer elemento 
+	box-shadow: 20px 20px black;
+
+	/*o box-shadow suporta ainda mais um valor que faz a sombra aumentar ou diminuir
+	box-shadow: 20px 20px 20px 30px black;
+
+	/*keyword inset para uma borda interna
+	box-shadow: inset 0 0 40px black;
+}
+p {
+	opacity: 0.8;
+	/* ou
+	/* branco com 80% de opacidade
+	color: rgba(255,255,255, 0.8);
+}
+
+/*
+-webkit-: navegadores Webkit (Chrome, Safari, iOS, Android)
+-moz-: Firefox (Mozilla)
+-ms-: Internet Explorer (Microsoft)
+-o-: Opera
+
+border-radius temporario (experimental) = -moz-border-radius
+										= -webkit-border-radius
+
+/* gradiente:
+http://www.colorzilla.com/gradient-editor/
+
+.linear {
+  background: linear-gradient(white, blue);
+}
+.radial {
+  background: radial-gradient(white, blue);
+}
+.gradiente {
+  background: linear-gradient(45deg, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%);
+}
+
+/*compatibilidade
+.linear {
+  /* quem nao suporta:
+  background: #cbebff;
+  /* para todos os outros que suportam:
+  background: linear-gradient(to bottom, white, blue);
+  background: -webkit-linear-gradient(top, white, blue);
+  background: -moz-linear-gradient(top, white, blue);
+  background: -o-linear-gradient(top, white, blue);
+  
+  /* Chrome até versão 9 e o Safari até versão 5
+  background: -webkit-gradient(linear, left top, left bottom, 
+      color-stop(0%, white), color-stop(100%, blue));
+  /*IE6 até IE9
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr='#FFFFFF', endColorstr='#0000FF',GradientType=0);
+}
+
+/* exemplo usando o css gradient generator (http://www.colorzilla.com/gradient-editor/):
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feffff+0,a0d8ef+40,36363d+77&0.5+0,1+100 
+background: -moz-linear-gradient(-45deg,  rgba(254,255,255,0.5) 0%, rgba(160,216,239,0.7) 40%, rgba(54,54,61,0.89) 77%, rgba(54,54,61,1) 100%); /* FF3.6-15 
+background: -webkit-linear-gradient(-45deg,  rgba(254,255,255,0.5) 0%,rgba(160,216,239,0.7) 40%,rgba(54,54,61,0.89) 77%,rgba(54,54,61,1) 100%); /* Chrome10-25,Safari5.1-6 
+background: linear-gradient(135deg,  rgba(254,255,255,0.5) 0%,rgba(160,216,239,0.7) 40%,rgba(54,54,61,0.89) 77%,rgba(54,54,61,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80feffff', endColorstr='#36363d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient 
+;
+
+
+
+
+/* Graceful degradation: o objetivo era montar seu site voltado 
+/*aos navegadores modernos e fazer com que ele degradasse "graciosamente", 
+/*removendo funcionalidades não suportadas;
+
+/* progressive enhancement = contrario ao gradeful: comece do basico e acrescente;
 */
